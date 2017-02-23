@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile "com.google.android.gms:play-services-auth:+"
+    compile "com.google.android.gms:play-services-auth:9.8.0"
     compile "com.facebook.react:react-native:+"
 }
