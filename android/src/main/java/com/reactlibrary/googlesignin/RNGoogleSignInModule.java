@@ -160,6 +160,11 @@ public class RNGoogleSignInModule extends ReactContextBaseJavaModule implements 
         return mGoogleApiClient != null && mGoogleApiClient.isConnected();
     }
 
+    @ReactMethod
+    public void isConnectedAsync(Promise promise) {
+        promise.resolve(isConnected());
+    }
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         log("RNGoogleApiConnected");
