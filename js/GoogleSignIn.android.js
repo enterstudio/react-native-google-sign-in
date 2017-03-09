@@ -150,6 +150,10 @@ const GoogleSignIn = {
   onDisconnectError(fn) {
     return addListener('RNGoogleDisconnectError', fn);
   },
+
+  async isConnectedAsync() {
+    return await RNGoogleSignIn.isConnectedAsync();
+  }
 };
 
 module.exports = GoogleSignIn;
