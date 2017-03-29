@@ -59,6 +59,10 @@ const GoogleSignIn = {
     });
   },
 
+  async playServicesAvailable(autoresolve) {
+    return await RNGoogleSignIn.playServicesAvailable(autoresolve)
+  },
+
   normalizeUser(user) {
     const {
       displayName,
